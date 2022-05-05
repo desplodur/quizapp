@@ -1,8 +1,22 @@
-body {
-  width: 100vw;
-  height: 200vh;
-}
+@import url("question.css");
 
+* {
+  box-sizing: border-box;
+}
+:root {
+}
+header {
+  background-color: darkmagenta;
+}
+body {
+  margin: 0em auto;
+  font-family: "Roboto", sans-serif;
+  color: #f1f2f6;
+  background-color: darkslategrey;
+}
+h1 {
+  margin: 0 auto;
+}
 .nav {
   position: fixed;
   bottom: 0;

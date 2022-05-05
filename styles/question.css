@@ -1,0 +1,25 @@
+.question {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  background-color: blue;
+  padding-top: 2em;
+}
+.question__card {
+  background-color: lightslategray;
+  width: 80vw;
+  position: relative;
+}
+
+.question__btn {
+  border: 0;
+  background-color: transparent;
+  color: white;
+}
+
+.question__bookmark {
+  position: absolute;
+  right: 15px;
+  top: -15px;
+}
