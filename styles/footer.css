@@ -1,0 +1,18 @@
+footer {
+  width: 100vw;
+  background-color: var(--lightwhite);
+  padding: 1em 0 1em 0;
+}
+
+svg {
+  color: var(--darkblue);
+  width: 2rem;
+}
+
+.nav {
+  position: fixed;
+  color: var(--lightwhite);
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+}

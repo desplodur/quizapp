@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <title>Quiz-App Profile</title>
   </head>
   <header>
@@ -12,19 +13,35 @@
     </div>
   </header>
   <body>
-    <img aria-label="Profile picture" src="" alt="" />
-    <h2 aria-label="Name"></h2>
-    <p aria-label="About me">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta quasi
-      quidem rerum fugiat corrupti similique et consectetur sapiente provident
-      dolorem?
-    </p>
-    <h2>Lorem, ipsum dolor.</h2>
-    <div Aria-label="Skill tags"></div>
-    <button aira-label="Logout button"></button>
+    <section class="profile" aria-label="profile section">
+      <article class="profile__me" aria-label="Your picture and your name">
+        <img
+          class="profile__me__pic"
+          aria-label="Profile picture"
+          src=""
+          alt="Profile picture"
+        />
+        <h2>Laurenz Rudolph</h2>
+      </article>
+      <article class="profile__aboutme" aria-label="About me section">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+          adipisci autem aliquid blanditiis delectus illum alias dolor nesciunt
+          at perferendis, aut est, temporibus, nobis tenetur cupiditate nisi
+          deserunt vel ea?
+        </p>
+      </article>
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <div class="flex__center">
+        <p class="question__tag">lorem</p>
+        <p class="question__tag">lorem</p>
+        <p class="question__tag">lorem</p>
+        <p class="question__tag">lorem</p>
+      </div>
+    </section>
   </body>
-  <footer>
-    <a href="index.html">
+  <footer class="nav" aria-label="Navigation bar">
+    <a class="nav--link" aria-label="Go to home" href="index.html">
       <article>
         <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
           <path
@@ -34,7 +51,7 @@
         </svg>
       </article>
     </a>
-    <a href="bookmarks.html">
+    <a class="nav__link" aria-label="Go to bookmarks" href="bookmarks.html">
       <article>
         <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
           <path
@@ -44,7 +61,7 @@
         </svg>
       </article>
     </a>
-    <a href="create.html">
+    <a class="nav__link" aria-label="Create new questions" href="create.html">
       <article>
         <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
           <path
@@ -54,7 +71,7 @@
         </svg>
       </article>
     </a>
-    <a href="profiles.html">
+    <a class="nav__link" aria-label="Go to your profile" href="profiles.html">
       <article>
         <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
           <path
