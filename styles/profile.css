@@ -1,0 +1,31 @@
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding-top: 2em;
+  padding-bottom: 6em;
+  color: var(--white);
+}
+
+.profile__me {
+  background-color: var(--green);
+  border-radius: 20px;
+  width: 80vw;
+  position: relative;
+  padding: 1em 2em 1em 2em;
+}
+
+.profile__me__pic {
+  width: 40%;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+}
+
+.profile__logout {
+  padding: 1.2em;
+  background-color: var(--lightgreen);
+  border-radius: 20px;
+  border: none;
+}
