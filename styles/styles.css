@@ -13,7 +13,7 @@
   --darkblue: #0b132b;
   --green: #006d77;
   --lightgreen: #1d8791;
-  --red: #b51f67;
+  --gold: #f6ae2d;
 }
 
 body {
@@ -40,4 +40,14 @@ h2 {
   flex-wrap: wrap;
   gap: 2em;
   justify-content: center;
+}
+
+.flex__align {
+  align-items: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }

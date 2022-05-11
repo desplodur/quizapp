@@ -34,10 +34,28 @@
 .question__bookmark {
   position: absolute;
   right: 20px;
-  top: -12px;
+  top: -15px;
+}
+
+.question__bookmark__style {
+  color: var(--gold);
+  width: 24;
+  height: 24;
+  cursor: pointer;
+}
+
+.question__bookmark__style__saved {
+  color: aquamarine;
+  width: 24;
+  height: 24;
+  cursor: pointer;
 }
 
 .question__tag {
   padding: 0.1em;
   font-size: 0.8rem;
+}
+
+.showanswer {
+  display: none;
 }
