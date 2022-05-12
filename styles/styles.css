@@ -1,10 +1,53 @@
-body {
-  width: 100vw;
-  height: 200vh;
+@import url("question.css");
+@import url("footer.css");
+@import url("create.css");
+@import url("profile.css");
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+:root {
+  --white: #f1f1f1;
+  --lightwhite: #c0c0c0;
+  --darkblue: #0b132b;
+  --green: #006d77;
+  --lightgreen: #1d8791;
+  --gold: #f6ae2d;
 }
 
-.nav {
-  position: fixed;
-  bottom: 0;
+body {
+  margin: 0em auto;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--white);
+  color: var(--darkblue);
+  height: 100vh;
+}
+h1 {
+  margin: 0 auto;
+  color: var(--darkblue);
+  background-color: var(--lightwhite);
+  padding: 1em;
+  text-align: center;
+}
+
+h2 {
+  margin: 0 auto;
+}
+
+.flex__center {
   display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+
+.flex__align {
+  align-items: center;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }

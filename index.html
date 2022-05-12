@@ -5,31 +5,171 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <script src="index.js" defer></script>
+
     <title>Quiz-App Home</title>
   </head>
   <header>
-    <div>
-      <h1>Quiz-App</h1>
-    </div>
+    <h1>Quiz-App</h1>
   </header>
   <body>
-    <section>
-      <article aria-label="Question card">
-        <button></button>
+    <section class="question">
+      <article class="question__card" aria-label="question card">
+        
+          <svg class="question__bookmark question__bookmark__style" data-js="bookmark" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+            /></svg>
+          
         <h2>Question:</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, quo?
-        </p>
-        <button aria-label="Show the answer"></button>
-        <p>lorem</p>
-        <p>lorem</p>
-        <p>Lorem</p>
-        <p>lorem</p>
+          <p class="question__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
+            quo?
+          </p>
+        </div>
+        <div class="flex__center">
+          <button onclick="showAnswer()"
+            class="question__btn question__btn__answer"
+            aria-label="Show the answer"
+          >
+            Show Answer
+          </button>
+        <article>
+          <p class="showanswer" id="answer">Answer: Lorem ipsum dolor </p>
+        </article>
+        </div>
+        <div class="flex__center">
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+        </div>
+      </article>
+      <article class="question__card" aria-label="question card">
+        <button class="question__btn question__bookmark">
+          <svg class="question__bookmark__style" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+            />
+          </svg>
+        </button>
+        <h2>Question:</h2>
+          <p class="question__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
+            quo?
+          </p>
+        </div>
+        <div class="flex__center">
+          <button
+            class="question__btn question__btn__answer"
+            aria-label="Show the answer"
+          >
+            Show Answer
+          </button>
+        </div>
+        <div class="flex__center">
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+        </div>
+      </article>
+      <article class="question__card" aria-label="question card">
+        <button class="question__btn question__bookmark">
+          <svg class="question__bookmark__style" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+            />
+          </svg>
+        </button>
+        <h2>Question:</h2>
+          <p class="question__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
+            quo?
+          </p>
+        </div>
+        <div class="flex__center">
+          <button
+            class="question__btn question__btn__answer"
+            aria-label="Show the answer"
+          >
+            Show Answer
+          </button>
+        </div>
+        <div class="flex__center">
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+        </div>
+      </article>
+      <article class="question__card" aria-label="question card">
+        <button class="question__btn question__bookmark">
+          <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+            />
+          </svg>
+        </button>
+        <h2>Question:</h2>
+          <p class="question__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
+            quo?
+          </p>
+        </div>
+        <div class="flex__center">
+          <button
+            class="question__btn question__btn__answer"
+            aria-label="Show the answer"
+          >
+            Show Answer
+          </button>
+        </div>
+        <div class="flex__center">
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+        </div>
+      </article>
+      <article class="question__card" aria-label="question card">
+        <button class="question__btn question__bookmark">
+          <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+            />
+          </svg>
+        </button>
+        <h2>Question:</h2>
+          <p class="question__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
+            quo?
+          </p>
+        </div>
+        <div class="question__flex question__flex__center">
+          <button
+            class="question__btn question__btn__answer"
+            aria-label="Show the answer"
+          >
+            Show Answer
+          </button>
+        </div>
+        <div class="question__flex question__flex__center">
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+        </div>
       </article>
     </section>
   </body>
-  <footer aria-label="Navigation bar" class="nav">
-    <a href="index.html">
+  <footer class="nav" aria-label="Navigation bar">
+    <a class="nav--link" aria-label="Go to home" href="index.html">
       <article>
         <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
           <path
@@ -39,7 +179,7 @@
         </svg>
       </article>
     </a>
-    <a href="bookmarks.html">
+    <a class="nav__link" aria-label="Go to bookmarks" href="bookmarks.html">
       <article>
         <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
           <path
@@ -49,7 +189,7 @@
         </svg>
       </article>
     </a>
-    <a href="create.html">
+    <a class="nav__link" aria-label="Create new questions" href="create.html">
       <article>
         <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
           <path
@@ -59,7 +199,7 @@
         </svg>
       </article>
     </a>
-    <a href="profiles.html">
+    <a class="nav__link" aria-label="Go to your profile" href="profiles.html">
       <article>
         <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
           <path
