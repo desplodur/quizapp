@@ -35,6 +35,10 @@ h2 {
   margin: 0 auto;
 }
 
+.wrapper--displaynone {
+  display: none;
+}
+
 .flex__center {
   display: flex;
   flex-wrap: wrap;

@@ -12,7 +12,8 @@
     <h1>Quiz-App</h1>
   </header>
   <body>
-    <section class="question">
+    <!--Index Section / Questions-->
+    <section class="question" data-js="homepage" Aria-label="Answer the following questions" >
       <article class="question__card" aria-label="question card">
           <svg class="question__bookmark question__bookmark__style" data-js="bookmark" viewBox="0 0 24 24">
             <path
@@ -138,47 +139,169 @@
 </article>
       
     </section>
-  </body>
-  <footer class="nav" aria-label="Navigation bar">
-    <a class="nav--link" aria-label="Go to home" href="index.html">
+    <!-- Bookmarks Section / Saved Questions -->
+    <section class="question wrapper--displaynone" data-js="bookmarkpage" Aria-label="Here you can see your saved questions">
+      <article class="question__card" aria-label="question card">
+        
+        <svg class="question__bookmark question__bookmark__style" data-js="bookmark" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+          /></svg>
+        
+      <h2>Question:</h2>
+        <p class="question__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
+          quo?
+        </p>
+      </div>
+      <div class="flex__center">
+        <button data-js="answerbutton"
+          class="question__btn question__btn__answer"
+          aria-label="Show the answer"
+        
+        >
+        Show Answer
+        </button>
       <article>
+        <p class="showanswer" id="answer">Answer: Lorem ipsum dolor </p>
+      </article>
+      </div>
+      <div class="flex__center">
+        <p class="question__tag">lorem</p>
+        <p class="question__tag">lorem</p>
+        <p class="question__tag">lorem</p>
+        <p class="question__tag">lorem</p>
+      </div>
+    </article>
+    <article class="question__card" aria-label="question card">
+        
+      <svg class="question__bookmark question__bookmark__style" data-js="bookmark" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+        /></svg>
+      
+    <h2>Question:</h2>
+      <p class="question__text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
+        quo?
+      </p>
+    </div>
+    <div class="flex__center">
+      <button data-js="answerbutton"
+        class="question__btn question__btn__answer"
+        aria-label="Show the answer"
+      
+      >
+      Show Answer
+      </button>
+    <article>
+      <p class="showanswer" data-js="answer">Answer: Lorem ipsum dolor </p>
+    </article>
+    </div>
+    <div class="flex__center">
+      <p class="question__tag">lorem</p>
+      <p class="question__tag">lorem</p>
+      <p class="question__tag">lorem</p>
+      <p class="question__tag">lorem</p>
+    </div>
+  </article>    
+    </section>
+    <!-- Create Section / Create Questions -->
+    <article class="create wrapper--displaynone" data-js="createpage" Aria-label="Create a new question">
+      <form class="create__form" action="">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <input class="create__form__input" type="textarea" />
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <input class="create__form__input" type="text" />
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <input class="create__form__input" type="text" />
+        <div class="flex__center">
+          <input
+            class="create__form__btn"
+            Aria-label="Submit button"
+            type="submit"
+            value="Submit"
+          />
+        </div>
+      </form>
+    </article>
+    <!-- Profile Section / Visit and Edit Profile -->
+    <section class="profile wrapper--displaynone" data-js="profilepage" Aria-label="profile section">
+      <article
+        class="profile__me flex__center"
+        aria-label="Your picture and your name"
+      >
+        <img
+          class="profile__me__pic"
+          aria-label="Profile picture"
+          src="images/F814E788-21D6-46A9-A6C5-AA84073BBAAA_1_201_a.jpeg"
+          alt="Profile picture"
+        />
+        <div class="flex__center flex__align">
+          <h2>Laurenz Rudolph</h2>
+        </div>
+      </article>
+      <article class="profile__me" aria-label="About me section">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+          adipisci autem aliquid blanditiis delectus illum alias dolor nesciunt
+          at perferendis, aut est, temporibus, nobis tenetur cupiditate nisi
+          deserunt vel ea?
+        </p>
+      </article>
+      <article class="profile__me">
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <div class="flex__center">
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+        </div>
+      </article>
+      <article class="profile__me">
+        <div class="flex__center">
+          <button class="profile__logout" aria-label="Logout button">
+            Logout
+          </button>
+        </div>
+      </article>
+    </section>
+    <!-- Section end -->
+  </body>
+  <footer class="nav" data-js="footer" aria-label="Navigation bar">
+    <a class="nav--link" data-js="gotohome" id="0" aria-label="Go to home">
         <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
           <path
             fill="currentColor"
             d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"
           />
         </svg>
-      </article>
     </a>
-    <a class="nav__link" aria-label="Go to bookmarks" href="bookmarks.html">
-      <article>
+    <a class="nav__link" data-js="gotobookmark" id="1" aria-label="Go to bookmarks">
         <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
           <path
             fill="currentColor"
             d="M15,5A2,2 0 0,1 17,7V23L10,20L3,23V7C3,5.89 3.9,5 5,5H15M9,1H19A2,2 0 0,1 21,3V19L19,18.13V3H7A2,2 0 0,1 9,1Z"
           />
         </svg>
-      </article>
     </a>
-    <a class="nav__link" aria-label="Create new questions" href="create.html">
-      <article>
+    <a class="nav__link" data-js="gotocreate" id="2" aria-label="Create new questions">
         <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
           <path
             fill="currentColor"
             d="M19.7 12.9L14 18.6H11.7V16.3L17.4 10.6L19.7 12.9M23.1 12.1C23.1 12.4 22.8 12.7 22.5 13L20 15.5L19.1 14.6L21.7 12L21.1 11.4L20.4 12.1L18.1 9.8L20.3 7.7C20.5 7.5 20.9 7.5 21.2 7.7L22.6 9.1C22.8 9.3 22.8 9.7 22.6 10C22.4 10.2 22.2 10.4 22.2 10.6C22.2 10.8 22.4 11 22.6 11.2C22.9 11.5 23.2 11.8 23.1 12.1M3 20V4H10V9H15V10.5L17 8.5V8L11 2H3C1.9 2 1 2.9 1 4V20C1 21.1 1.9 22 3 22H15C16.1 22 17 21.1 17 20H3M11 17.1C10.8 17.1 10.6 17.2 10.5 17.2L10 15H8.5L6.4 16.7L7 14H5.5L4.5 19H6L8.9 16.4L9.5 18.7H10.5L11 18.6V17.1Z"
           />
         </svg>
-      </article>
     </a>
-    <a class="nav__link" aria-label="Go to your profile" href="profiles.html">
-      <article>
+    <a class="nav__link" data-js="gotoprofile" id="3"  aria-label="Go to your profile">
         <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
           <path
             fill="currentColor"
             d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"
           />
         </svg>
-      </article>
     </a>
   </footer>
 </html>
