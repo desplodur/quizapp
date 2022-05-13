@@ -7,6 +7,30 @@
 }*/
 let bookmarks = document.querySelectorAll('[data-js="bookmark"]');
 console.log(bookmarks);
+let answerbuttons = document.querySelectorAll('[data-js="answerbutton"]');
+console.log(answerbuttons);
+
+/*
+let answers = document.querySelectorAll('[data-js="answer"]');
+
+answerbuttons.forEach((button, index) => {
+  console.log(index);
+
+  button.addEventListener("click", () => {
+    let answer = answers[index];
+    answer.classList.toggle("showanswer");
+  });
+});
+*/
+answerbuttons.forEach((button) => {
+  button.addEventListener("click", () => {
+    if (button.textContent === "Show Answer") {
+      button.textContent = `Hide Answer`;
+    } else {
+      button.textContent = `Show Answer`;
+    }
+  });
+});
 
 bookmarks.forEach((bookmark) => {
   var change;
@@ -22,7 +46,7 @@ bookmarks.forEach((bookmark) => {
     }
   });
 });
-
+/*
 function showAnswer() {
   document.getElementById("answer").style.display = "block";
-}
+}*/
