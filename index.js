@@ -3,7 +3,6 @@ import jsbutton from "./js/buttons.js";
 
 let bookmarks = document.querySelectorAll('[data-js="bookmark"]');
 let answerbuttons = document.querySelectorAll('[data-js="answerbutton"]');
-let footer = document.querySelectorAll('[data-js="footer"]');
 
 answerbuttons.forEach(jsbutton);
 bookmarks.forEach(jsbookmark);
@@ -53,23 +52,6 @@ document.querySelector('[data-js="gotohome"]').onclick = reply_click;
 document.querySelector('[data-js="gotobookmark"]').onclick = reply_click;
 document.querySelector('[data-js="gotocreate"]').onclick = reply_click;
 document.querySelector('[data-js="gotoprofile"]').onclick = reply_click;
-
-/*
-footer.children[0].addEventListener("click", () => {
-  alert("test");
-});
-
-footer.children[1].addEventListener("click", () => {
-  alert("test1");
-});
-
-footer.children[2].addEventListener("click", () => {
-  alert("test2");
-});
-
-footer.children[3].addEventListener("click", () => {
-  alert("test3");
-});
 
 /* --------- Import Export function ausgelagert
 bookmarks.forEach((bookmark) => {
