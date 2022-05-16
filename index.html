@@ -14,7 +14,7 @@
   <body>
     <!--Index Section / Questions-->
     <section class="question" data-js="homepage" Aria-label="Answer the following questions" >
-      <article class="question__card" aria-label="question card">
+      <article class="question__card" data-js="questionCard" aria-label="question card">
           <svg class="question__bookmark question__bookmark__style" data-js="bookmark" viewBox="0 0 24 24">
             <path
               fill="currentColor"
@@ -31,10 +31,8 @@
             class="question__btn question__btn__answer"
             aria-label="Show the answer"
           >Show Answer</button>
-        <article>
-          <p class="showanswer" data-js="answer">Answer: Lorem ipsum dolor </p>
-        </article>
-        </div>
+         </div>
+          <p class="showAnswer" data-js="answer">Answer: Lorem ipsum dolor </p>
         <div class="flex__center">
           <p class="question__tag">lorem</p>
           <p class="question__tag">lorem</p>
@@ -42,10 +40,12 @@
           <p class="question__tag">lorem</p>
         </div>
       </article>
-      <article class="question__card" aria-label="question card">
-        
-        <svg class="question__bookmark question__bookmark__style" data-js="bookmark" viewBox="0 0 24 24"><path fill="currentColor" d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"/>
-        </svg>
+      <article class="question__card" data-js="questionCard" aria-label="question card">
+        <svg class="question__bookmark question__bookmark__style" data-js="bookmark" viewBox="0 0 24 24">
+          <path
+            fill="currentColor"
+            d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+          /></svg>
       <h2>Question:</h2>
         <p class="question__text">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
@@ -56,29 +56,22 @@
         <button data-js="answerbutton"
           class="question__btn question__btn__answer"
           aria-label="Show the answer"
-        
-        >
-        Show Answer
-        </button>
-      <article>
-        <p class="showanswer" id="answer">Answer: Lorem ipsum dolor </p>
-      </article>
-      </div>
+        >Show Answer</button>
+       </div>
+        <p class="showAnswer" data-js="answer">Answer: Lorem ipsum dolor </p>
       <div class="flex__center">
         <p class="question__tag">lorem</p>
         <p class="question__tag">lorem</p>
         <p class="question__tag">lorem</p>
         <p class="question__tag">lorem</p>
       </div>
-    </article>
-    <article class="question__card" aria-label="question card">
-        
+      </article>
+      <article class="question__card" data-js="questionCard" aria-label="question card">
       <svg class="question__bookmark question__bookmark__style" data-js="bookmark" viewBox="0 0 24 24">
         <path
           fill="currentColor"
           d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
         /></svg>
-      
     <h2>Question:</h2>
       <p class="question__text">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
@@ -89,29 +82,22 @@
       <button data-js="answerbutton"
         class="question__btn question__btn__answer"
         aria-label="Show the answer"
-      
-      >
-      Show Answer
-      </button>
-    <article>
-      <p class="showanswer" id="answer">Answer: Lorem ipsum dolor </p>
-    </article>
-    </div>
+      >Show Answer</button>
+     </div>
+      <p class="showAnswer" data-js="answer">Answer: Lorem ipsum dolor </p>
     <div class="flex__center">
       <p class="question__tag">lorem</p>
       <p class="question__tag">lorem</p>
       <p class="question__tag">lorem</p>
       <p class="question__tag">lorem</p>
     </div>
-  </article>
-  <article class="question__card" aria-label="question card">
-        
+      </article>
+      <article class="question__card" data-js="questionCard" aria-label="question card">
     <svg class="question__bookmark question__bookmark__style" data-js="bookmark" viewBox="0 0 24 24">
       <path
         fill="currentColor"
         d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
       /></svg>
-    
   <h2>Question:</h2>
     <p class="question__text">
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
@@ -122,101 +108,88 @@
     <button data-js="answerbutton"
       class="question__btn question__btn__answer"
       aria-label="Show the answer"
-    
-    >
-    Show Answer
-    </button>
-  <article>
-    <p class="showanswer" id="answer">Answer: Lorem ipsum dolor </p>
-  </article>
-  </div>
+    >Show Answer</button>
+   </div>
+    <p class="showAnswer" data-js="answer">Answer: Lorem ipsum dolor </p>
   <div class="flex__center">
     <p class="question__tag">lorem</p>
     <p class="question__tag">lorem</p>
     <p class="question__tag">lorem</p>
     <p class="question__tag">lorem</p>
   </div>
-</article>
-      
+      </article>
     </section>
     <!-- Bookmarks Section / Saved Questions -->
-    <section class="question wrapper--displaynone" data-js="bookmarkpage" Aria-label="Here you can see your saved questions">
-      <article class="question__card" aria-label="question card">
-        
-        <svg class="question__bookmark question__bookmark__style" data-js="bookmark" viewBox="0 0 24 24">
-          <path
-            fill="currentColor"
-            d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
-          /></svg>
-        
-      <h2>Question:</h2>
-        <p class="question__text">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
-          quo?
-        </p>
-      </div>
-      <div class="flex__center">
-        <button data-js="answerbutton"
-          class="question__btn question__btn__answer"
-          aria-label="Show the answer"
-        
-        >
-        Show Answer
-        </button>
-      <article>
-        <p class="showanswer" id="answer">Answer: Lorem ipsum dolor </p>
+    <section class="question hidden" data-js="bookmarkpage" Aria-label="Here you can see your saved questions">
+      <article class="question__card" data-js="questionCard" aria-label="question card">
+          <svg class="question__bookmark question__bookmark__style" data-js="bookmark" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+            /></svg>
+        <h2>Question:</h2>
+          <p class="question__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
+            quo?
+          </p>
+        </div>
+        <div class="flex__center">
+          <button data-js="answerbutton"
+            class="question__btn question__btn__answer"
+            aria-label="Show the answer"
+          >Show Answer</button>
+        </div>
+          <p class="showAnswer" data-js="answer">Answer: Lorem ipsum dolor </p>
+        <div class="flex__center">
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+        </div>
       </article>
-      </div>
-      <div class="flex__center">
-        <p class="question__tag">lorem</p>
-        <p class="question__tag">lorem</p>
-        <p class="question__tag">lorem</p>
-        <p class="question__tag">lorem</p>
-      </div>
-    </article>
-    <article class="question__card" aria-label="question card">
-        
-      <svg class="question__bookmark question__bookmark__style" data-js="bookmark" viewBox="0 0 24 24">
-        <path
-          fill="currentColor"
-          d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
-        /></svg>
-      
-    <h2>Question:</h2>
-      <p class="question__text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
-        quo?
-      </p>
-    </div>
-    <div class="flex__center">
-      <button data-js="answerbutton"
-        class="question__btn question__btn__answer"
-        aria-label="Show the answer"
-      
-      >
-      Show Answer
-      </button>
-    <article>
-      <p class="showanswer" data-js="answer">Answer: Lorem ipsum dolor </p>
-    </article>
-    </div>
-    <div class="flex__center">
-      <p class="question__tag">lorem</p>
-      <p class="question__tag">lorem</p>
-      <p class="question__tag">lorem</p>
-      <p class="question__tag">lorem</p>
-    </div>
-  </article>    
+      <article class="question__card" data-js="questionCard" aria-label="question card">
+          <svg class="question__bookmark question__bookmark__style" data-js="bookmark" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M17,18L12,15.82L7,18V5H17M17,3H7A2,2 0 0,0 5,5V21L12,18L19,21V5C19,3.89 18.1,3 17,3Z"
+            /></svg>
+        <h2>Question:</h2>
+          <p class="question__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,
+            quo?
+          </p>
+        </div>
+        <div class="flex__center">
+          <button data-js="answerbutton"
+            class="question__btn question__btn__answer"
+            aria-label="Show the answer"
+          >Show Answer</button>
+        </div>
+          <p class="showAnswer" data-js="answer">Answer: Lorem ipsum dolor </p>
+        <div class="flex__center">
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+          <p class="question__tag">lorem</p>
+        </div>
+      </article>
     </section>
     <!-- Create Section / Create Questions -->
-    <article class="create wrapper--displaynone" data-js="createpage" Aria-label="Create a new question">
+    <article class="create" data-js="createpage" Aria-label="Create a new question">
       <form class="create__form" action="">
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        <input class="create__form__input" value="test" type="text" />
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        <input class="create__form__input" type="text" />
-        <h2>Lorem ipsum dolor sit amet.</h2>
-        <input class="create__form__input" type="text" />
+        <article data-js="createForm">
+          <h2>Lorem ipsum dolor sit amet.</h2>
+          <input data-js="textArea" class="create__form__input" value="test" type="text" />  
+          <p data-js="totalCharacters">d</p>
+        </article>
+        <article data-js="createForm">
+          <h2>Lorem ipsum dolor sit amet.</h2>
+          <input data-js="textArea" class="create__form__input" value="test" type="text" />  
+        </article>
+        <article data-js="createForm">
+          <h2>Lorem ipsum dolor sit amet.</h2>
+          <input data-js="textArea" class="create__form__input" value="test" type="text" />  
+        </article>
         <div class="flex__center">
           <input
             class="create__form__btn"
@@ -228,7 +201,7 @@
       </form>
     </article>
     <!-- Profile Section / Visit and Edit Profile -->
-    <section class="profile wrapper--displaynone" data-js="profilepage" Aria-label="profile section">
+    <section class="profile hidden" data-js="profilepage" Aria-label="profile section">
       <article
         class="profile__me flex__center"
         aria-label="Your picture and your name"

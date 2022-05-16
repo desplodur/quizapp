@@ -35,8 +35,12 @@ h2 {
   margin: 0 auto;
 }
 
-.wrapper--displaynone {
+.hidden {
   display: none;
+}
+
+.showAnswer {
+  visibility: hidden;
 }
 
 .flex__center {

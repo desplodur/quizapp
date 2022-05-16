@@ -1,10 +1,40 @@
 import jsbookmark from "./js/bookmarks.js";
-import jsbutton from "./js/buttons.js";
 
-let bookmarks = document.querySelectorAll('[data-js="bookmark"]');
-let answerbuttons = document.querySelectorAll('[data-js="answerbutton"]');
+const bookmarks = document.querySelectorAll('[data-js="bookmark"]');
+const questionCards = document.querySelectorAll('[data-js="questionCard"]');
 
-answerbuttons.forEach(jsbutton);
+questionCards.forEach((card) => {
+  const answerButton = card.querySelector('[data-js="answerbutton"]');
+  const answer = card.querySelector('[data-js="answer"]');
+
+  answerButton.addEventListener("click", () => {
+    answer.classList.toggle("showAnswer");
+    if (answerButton.textContent.includes("Show Answer")) {
+      answerButton.textContent = `Hide Answer`;
+    } else {
+      answerButton.textContent = `Show Answer`;
+    }
+  });
+});
+
+const formQuestions = document.querySelectorAll('[data-js="createForm"]');
+console.log(formQuestions);
+
+formQuestions.forEach((formQuestion) => {
+  const inputField = formQuestion.querySelector('[data-js="textArea"]');
+  const characterCounter = formQuestion.querySelector(
+    '[data-js="totalCharacters"]'
+  );
+
+  inputField.addEventListener("input", () => {
+    console.log("click");
+    let value = textArea.value.length;
+    document.querySelector('[data-js="totalCharacters"]').innerHTML =
+      "Characters: " + value;
+  });
+});
+
+//answerbuttons.forEach(jsbutton);
 bookmarks.forEach(jsbookmark);
 
 let reply_click = function () {
@@ -30,28 +60,27 @@ let reply_click = function () {
 };
 
 function add() {
-  document
-    .querySelector('[data-js="homepage"]')
-    .classList.add("wrapper--displaynone");
-  document
-    .querySelector('[data-js="bookmarkpage"]')
-    .classList.add("wrapper--displaynone");
-  document
-    .querySelector('[data-js="createpage"]')
-    .classList.add("wrapper--displaynone");
-  document
-    .querySelector('[data-js="profilepage"]')
-    .classList.add("wrapper--displaynone");
+  document.querySelector('[data-js="homepage"]').classList.add("hidden");
+  document.querySelector('[data-js="bookmarkpage"]').classList.add("hidden");
+  document.querySelector('[data-js="createpage"]').classList.add("hidden");
+  document.querySelector('[data-js="profilepage"]').classList.add("hidden");
 }
 
 function remove(x) {
-  document.querySelector(x).classList.remove("wrapper--displaynone");
+  document.querySelector(x).classList.remove("hidden");
 }
 
 document.querySelector('[data-js="gotohome"]').onclick = reply_click;
 document.querySelector('[data-js="gotobookmark"]').onclick = reply_click;
 document.querySelector('[data-js="gotocreate"]').onclick = reply_click;
 document.querySelector('[data-js="gotoprofile"]').onclick = reply_click;
+
+const cards = [
+  {
+    title: "Lorem20",
+    question: "",
+  },
+];
 
 /* --------- Import Export function ausgelagert
 bookmarks.forEach((bookmark) => {
