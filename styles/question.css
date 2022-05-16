@@ -22,9 +22,6 @@
   font-size: 1rem;
 }
 
-.question__text {
-}
-
 .question__btn__answer {
   padding: 1.2em;
   background-color: var(--lightgreen);
@@ -57,5 +54,6 @@
 }
 
 .showanswer {
-  display: none;
+  display: block;
+  color: blue;
 }
